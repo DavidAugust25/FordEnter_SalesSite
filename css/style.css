@@ -1,0 +1,388 @@
+*{
+  margin: 0;
+	padding: 0;
+  text-decoration:none;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* É mais prático colocar as cores aqui para mudar todas de uma vez */
+:root{
+  --lightblue: #1351d8;
+  --darkblue: #1b357e;
+  --darkgray: #adadad;
+}
+body {
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 100vh; 
+}
+body hr {
+  height: 2px;
+  background: var(--darkblue);
+  border: none;
+}
+header {
+    min-height: 40px;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div {
+  width: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+#nome {
+  white-space: nowrap;
+  display: flex;
+}
+header a{
+  color: var(--lightblue);
+  font-size:25px;
+  font-weight: bold;
+}
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gambiarra{
+  display: flex;
+}
+header div nav li ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div nav li{
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px 0 20px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+header .highlight, header .current a{
+  color: var(--darkblue);
+}
+
+header a:hover{
+  color: var(--darkblue);
+}
+main {
+  overflow:hidden; 
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+main p {
+  margin-top: 10px;
+}
+main a {
+  color: var(--lightblue);
+}
+main a:hover{
+  color: var(--darkblue);
+  font-weight:bold;
+}
+main img {
+  width: max-content;
+  height: auto;
+  border-radius: 10px;
+}
+footer {
+    background-color: var(--darkblue);
+    color: #ffffff;
+    min-height: 40px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div span {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+footer div span img {
+    width: 40px;
+}
+#absolute {
+    position: absolute;
+    bottom: 50%;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 34px;
+    height: 76px;
+    background: white;
+    border-radius: 10px;
+}
+#accessibility i {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: var(--lightblue);
+    border: 2px solid var(--darkblue);
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+#accessibility i:hover, i:active {
+    background: var(--darkblue);
+    border: 2px solid var(--lightblue);
+}
+#videoframe {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+#videoframe div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#videoframe #video {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+#videoframe #video iframe {
+    border-radius: 20px;
+    border: 2px solid var(--darkblue);
+    margin-top: 30px;
+}
+#videoframe #video #video-iframe {
+    width: 60%;
+    height: 80%;
+  }
+#videoframe #carmodels {
+    height: 26vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+#videoframe #carmodels div {
+    width:100%;
+    border: none;
+    height: 30vh;
+}
+#videoframe #carmodels .carpic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 20vh; 
+}
+#videoframe #carmodels .carpic img {
+   width: 50%;
+   height: 95%; 
+   margin-top: 10px;
+}
+#videoframe #carmodels .carpic span h1 {
+  color: var(--lightblue);
+  font-size: 13px;
+}
+#videoframe #carmodels .carpic span h2{
+  color: var(--darkgray);
+  font-size: 12px;
+}
+#videoframe #carmodels .carpic #carselector {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+#videoframe #carmodels .carpic #carselector span {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 40%;
+}
+#videoframe #carmodels .carpic #carselector input {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--lightblue);
+  border-radius: 20px;
+}
+#videoframe #carmodels .carpic .alana-ajuda {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+#videoframe #btn {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#videoframe #btn .compare {
+    background: #1351d8;
+    color: #ffffff;
+    width: 200px;
+    height: 25px;
+    border-radius: 3px;
+    font-weight:bold;
+    border: 2px solid #1b357e;
+    margin: 1px 0;
+    cursor: pointer;
+}
+#videoframe #btn button:hover {
+    background: #1b357e;
+    border: 2px solid #1351d8;
+    width: 55%;
+}
+
+#support {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+}
+#support div {
+    width: max-content;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+#support div form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+#support div form h3 {
+  color: #1351d8; 
+  font-size: 15px;
+  padding-bottom: 3px;
+}
+#support div form input {
+    color:#101010;
+    width: 185px;
+    border-radius: 3px;
+    height: 25px;
+    border: 1px solid #adadad;
+    margin: 1px 0;
+    padding-left: 15px;
+}
+::placeholder {
+  color: #adadad;
+  opacity: 1;
+}
+#support div form select {
+    width: 100%;
+    border-radius: 3px;
+    height: 25px;
+    background: #ffffff;
+    border: 1px solid #adadad;
+    margin: 1px 0;
+    color: #adadad;
+    padding-left: 15px;
+}
+#support .send {
+    background: #1351d8;
+    color: #ffffff;
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    font-weight:bold;
+    border: 2px solid #1b357e;
+    margin: 1px 0;
+    cursor: pointer;
+}
+#support button:hover {
+    background: #1b357e;
+    border: 2px solid #1351d8;
+    width: 105%;
+}
+#support button:active {
+    margin: 1000px 0;
+    transition: margin 5s;
+}
+@media (max-width:480px) {
+  header div {
+    margin-left: 40px;
+  }
+  #videoframe {
+       flex: 1;
+   scrollbar-width: 10px;
+  }
+  #carmodels {
+        margin-bottom: 100px;
+  }
+  #video-iframe {
+    width: 100%;
+    height: 30%;
+    display: none;
+  }
+  #carmodels {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+  }
+  #btn {
+    position: absolute;
+    top: 80%;
+  }
+  main {
+   color: #ffffff;
+   display: flex;
+   align-items: flex-end;
+   text-align: center;
+   font-weight: bold;
+  }
+ #nome {
+  flex-direction: column;
+  white-space: normal;
+}
+#gambiarra {
+  flex-direction: column;
+}
+#support {
+  display: flex;
+    flex-direction: column;
+}
+  #Homepage {
+   background-image: url("../img/ranger-mobile.jpg"); 
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+  }
+  #Homepage img {
+    opacity: 0;
+    height: 50%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 15vh;
+  }
+}
+
